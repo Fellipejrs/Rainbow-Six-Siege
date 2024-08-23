@@ -1,0 +1,7 @@
+{
+  "name": "RainbowSix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
