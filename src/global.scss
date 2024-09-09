@@ -1,37 +1,83 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #585858;
+}
 
-/* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+.container {
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+    .cabecalho {
+        padding: 1vh;
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        font-size: 3.5vh;
 
-/* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+        p{
+            background-color: #000;
+        }
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
+        p:hover {
+            color: #585858;
+            cursor: pointer;
+        }
+    }
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+    .logo {
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    main {
+        .principal {
+            margin-top: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            .img-principal {
+                width: 50%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cadastrar {
+                padding: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .login {
+                    background-color: transparent;
+                    color: #000000;
+                    border-radius: 3vh;
+                    padding: 1vw;
+                    font-size: 1.5vw;
+                    border: 3px solid #000000;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+
+                .login:hover {
+                    color: #fff;
+                }
+
+                .texto {
+                    text-align: center;
+                    font-size: 4vh;
+                    padding: 3px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
